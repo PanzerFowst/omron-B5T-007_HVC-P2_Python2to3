@@ -57,7 +57,3 @@ class SerialConnector(Connector):
             raise Exception('Serial port has not connected yet!')
 
         return self._ser.read(read_byte_size)
-
-if __name__ == '__main__':
-    main()
-
