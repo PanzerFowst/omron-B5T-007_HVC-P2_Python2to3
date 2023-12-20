@@ -178,6 +178,6 @@ class HVCResult(object):
 
 if __name__ == '__main__':
     hvc_res = HVCResult()
-    print hvc_res
+    print(hvc_res)
 
 
