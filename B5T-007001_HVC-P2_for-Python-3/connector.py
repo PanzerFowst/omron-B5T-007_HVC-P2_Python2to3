@@ -18,9 +18,7 @@
 
 import abc
 
-class Connector(object):
-    __metaclass__ = abc.ABCMeta
-
+class Connector(object, metaclass=abc.ABCMeta):
     @abc.abstractmethod
     def connect(self, com_port, baudrate, timeout):
         pass

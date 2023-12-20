@@ -127,14 +127,14 @@ def _parse_arg(argv):
         # Gets baudrate
         baudrate = int(argv[2])
         if baudrate not in p2def.AVAILABLE_BAUD:
-            print "Error: Invalid baudrate."
+            print("Error: Invalid baudrate.")
             sys.exit()
         # Gets STB flag
         use_stb = p2def.USE_STB_ON # Default setting is ON
         if argc == 4 and argv[3] == "OFF":
             use_stb = p2def.USE_STB_OFF
     else:
-        print "Error: Invalid argument."
+        print("Error: Invalid argument.")
         sys.exit()
     return (portinfo, baudrate, use_stb)
 
@@ -260,9 +260,9 @@ def main():
             if output_img_type != p2def.OUT_IMG_TYPE_NONE:
                 img.save(img_fname)
 
-            print ("==== Elapsed time:{0}".format(elapsed_time)) + "[msec] ===="
-            print hvc_tracking_result
-            print "Press Ctrl+C Key to end:\n"
+            print(("==== Elapsed time:{0}".format(elapsed_time)) + "[msec] ====")
+            print(hvc_tracking_result)
+            print("Press Ctrl+C Key to end:\n")
 
     except KeyboardInterrupt:
         time.sleep(1)
