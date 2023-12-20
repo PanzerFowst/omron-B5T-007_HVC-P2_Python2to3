@@ -74,7 +74,7 @@ class HVCP2Api(object):
         elif 'linux':
             stb_lib_name = LINUX_STB_LIB_NAME
         else:
-            raise 'Error: Unsupported OS.'
+            raise Exception('Error: Unsupported OS.')
 
         if self.use_stb:
             self._stb = STB(stb_lib_name, exec_func)
@@ -845,4 +845,3 @@ class HVCP2Api(object):
 
 if __name__ == '__main__':
     pass
-
