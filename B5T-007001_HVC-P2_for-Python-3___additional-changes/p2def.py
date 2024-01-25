@@ -40,6 +40,10 @@ OUT_IMG_TYPE_NONE  = 0x00
 OUT_IMG_TYPE_QVGA  = 0x01
 OUT_IMG_TYPE_QQVGA = 0x02
 
+# output image size definition (width, height)
+OUT_IMG_SIZE_QVGA = (320, 240)
+OUT_IMG_SIZE_QQVGA = (160, 120)
+
 # HVC camera angle definition.
 HVC_CAM_ANGLE_0   = 0x00
 HVC_CAM_ANGLE_90  = 0x01
