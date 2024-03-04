@@ -12,3 +12,4 @@ Check commit history for explaination of additions and diffs.
 subdirectory to seperate it from the example code usage files like `execution.py`.
 - It would also be convenient if this could be an installable package via the `pip`
 command.
+- Perhaps implimenting Python typing could also help for static analysis of the code.
